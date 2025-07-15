@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+    background-size: 1400% 1400%;
+    animation: animatedGradient 20s ease infinite;
+}
+
+@keyframes animatedGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+#carCanvas{
+    background-color: lightgray;
+}
+
+#networkCanvas{
+    background-color: black;
+}
